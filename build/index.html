@@ -1,3 +1,20 @@
+<style>
+  .indented-item p {
+    margin-bottom: 10px; /* Você pode ajustar esse valor para o espaçamento desejado */
+  }
+</style>
+
+<style>
+  .topic {
+    display: none;
+  }
+
+  .read-more-toggle {
+    cursor: pointer;
+    color: blue;
+  }
+</style>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,6 +31,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="static/css/screen.min.css">
   <link rel="stylesheet" href="static/css/custom.min.css">
+
   <script src="static/js/head.min.js"></script>
 </head>
 <body>
@@ -49,6 +67,11 @@
       </nav>
     </div>
   </div>
+  <style>
+    ul {
+      padding-left: 20px; /* Adicione o espaçamento desejado à esquerda */
+    }
+  </style>
 </header>
 <!-- Home section-->
 <!-- Home section-->
@@ -58,11 +81,11 @@
     <div class="container">
       <header class="home-section__header">
         <div class="candidate-info">
-          <!-- Adicione a imagem do candidato aqui à esquerda -->
+          <!-- Adicione a imagem do candidato aqui à esquerda
           <img src="candidato.jpg" alt="Foto do Candidato Robério Rocha">
-          <h1>Robério Rocha</h1>
+          <h1>Robério Rocha</h1> -->
         </div>
-        <h2>Candidato a Diretor Geral - IFBA, Campus Irecê.</h2>
+        <!--<h2>Candidato a Diretor Geral - IFBA, Campus Irecê.</h2>-->
       </header>
     </div>
   </div>
@@ -72,11 +95,10 @@
 <section class="about-section" id="about">
   <div class="container">
     <div class="about-card">
-      <header class="about-card__header">
+      <header class="about-card__header" style="background: rgba(255, 165, 0, 0.5);">
         <h2>Sobre Mim</h2>
         <h4>Conheça o candidato</h4>
       </header>
-
       <div class="about-card__info">
         <p>Olá! Sou Prof. Robério Rocha, candidato ao cargo de Diretor Geral do IFBA, Campus Irecê. Tenho o compromisso de promover a excelência na educação e contribuir para o crescimento da instituição no território de Irecê.</p>
         <blockquote>
@@ -97,31 +119,99 @@
     </header>
     <div class="grid-container">
       <ul class="services services_advisory">
-        <li class="services__item icon icon_research">
-          <h4>Excelência na Educação</h4>
-          <p>Durante nossa gestão, priorizamos fortemente o incentivo à formação contínua dos docentes e técnicos administrativos.</p>
+
+        <li class="services__item item">
+          <h4>Infraestrutura e Recursos do Campus</h4>
+
+        <!--  <p align="justify"><strong> Durante minha gestão como Diretor Geral, realizamos melhorias notáveis no campus, incluindo.</strong></p>-->
+          <ul>
+            <li class="indented-item">
+              <p> Construção do ginásio poliesportivo;</p>
+            </li>
+            <li class="indented-item">
+              <p>Construção de um novo pavilhão de aulas e implantação de laboratórios;</p>
+            </li>
+            <li class="indented-item">
+              <p>Avanço na infraestrutura com o Galpão de Eletromecânica;</p>
+            </li>
+            <li class="indented-item">
+              <p>Investimento em sustentabilidade com a Usina Fotovoltaica; e</p>
+            </li>
+            <li class="indented-item">
+              <p>Aquisição e renovação da frota de veículos.</p>
+            </li>
+            <li class="indented-item">
+              <p> Implementação de uma rede de fibra ótica;</p>
+            </li>
+          </ul>
         </li>
-        <li class="services__item icon icon_strategy">
-          <h4>Novos cursos</h4>
-          <p>Durante nossa gestão, conseguimos expandir a oferta de cursos em nosso campus, com a criação dos cursos de Mecânica e Análise e Desenvolvimento de Sistemas. Essa iniciativa pode colocar o IFBA entre as instituições de ensino superior e publico do território de Irecê, ampliando as oportunidades de formação dos nossos estudantes.</p>
+
+
+        <li class="services__item ">
+          <h4>Educação e Cursos</h4>
+          <ul>
+            <li class="indented-item">
+              <p>Expansão do horário de funcionamento da Biblioteca com a contratação de novos profissionais;</p>
+            </li>
+            <li class="indented-item">
+              <p>Implantação do refeitório do campus;</p>
+            </li>
+            <li class="indented-item">
+              <p>Introdução do curso superior em Análise e Desenvolvimento de Sistemas (ADS) e Manutenção Industrial (MI), com avaliação positiva do MEC;</p>
+            </li>
+            <li class="indented-item">
+              <p>novamos ao oferecer o Curso Técnico Integrado em Administração na modalidade de Educação de Jovens e Adultos.</p>
+            </li>
+          </ul>
         </li>
-        <li class="services__item icon icon_improve">
-          <h4>Crescimento Sustentável</h4>
-          <p> Implantação da usina fotovoltaica. Essa iniciativa representa um avanço significativo na direção de um crescimento sustentável, uma vez que a usina fotovoltaica contribui para a geração de energia limpa e renovável, reduzindo nossa pegada de carbono e promovendo práticas ambientalmente responsáveis em nosso campus.</p>
+        <li class="services__item ">
+          <h4>Administração e Processos Internos</h4>
+          <ul>
+            <li class="indented-item">
+              <p>Padronizamos os procedimentos de remoção, redistribuição e pedidos de afastamento para estudo de todos os servidores;</p>
+            </li>
+            <li class="indented-item">
+              <p>Ampliamos nossa equipe com a contratação de mais servidores técnicos administrativos e docentes.</p>
+            </li>
+          </ul>
         </li>
       </ul>
       <ul class="services services_pm">
-        <li class="services__item icon icon_plan">
-          <h4>Gestão Eficaz</h4>
-          <p>Durante nossa gestão, realizamos avanço em nosso quadro de pessoal. O número de professores efetivos cresceu substancialmente, passando de 20 para 50 docentes, enquanto o contingente de técnicos administrativos também registrou um aumento expressivo, saltando de 23 para 42 profissionais. Essa expansão fortaleceu nosso corpo docente e equipe administrativa, contribuindo diretamente para o aprimoramento de nossa instituição.</p>
+        <li class="services__item ">
+          <h4>Apoio a Estudantes</h4>
+          <ul>
+            <li class="indented-item">
+              <p>Implementamos um programa de distribuição de lanches para os alunos, assegurando que tenham acesso a refeições adequadas durante o dia letivo;</p>
+            </li>
+            <li class="indented-item">
+              <p>Expandimos as oportunidades de estágio para nossos alunos, proporcionando experiências práticas valiosas em suas áreas de estudo.</p>
+            </li>
+          </ul>
         </li>
-        <li class="services__item icon icon_recover">
-          <h4>Engajamento Comunitário</h4>
-          <p>No Engajamento Comunitário, alcançamos um marco significativo com a formação de mais de 3000 alunos no programa Pronatec, estabelecendo um recorde como o maior número de formandos pelo programa em todo o estado da Bahia. Esta conquista demonstra nosso compromisso em fortalecer os laços com a comunidade, fornecendo oportunidades educacionais valiosas e contribuindo para o desenvolvimento da região.</p>
-        </li>
-        <li class="services__item icon icon_support">
-          <h4>Melhoria na infraestrutura do campus</h4>
-          <p>Sob a liderança de Robério Rocha, a gestão do campus passou por uma relevantes transformação em sua infraestrutura. Construção do do Pavilhão de Eletromecânica, a inauguração de quatro novos laboratórios de informática, a construção do Ginásio de Esportes. Além disso, os laboratórios de Química, Física e Biologia foram modernizados. Essas realizações refletem o compromisso de Robério Rocha com a excelência educacional e o crescimento sustentável do campus, proporcionando um ambiente propício para o aprendizado e a inovação.</p>
+      </ul>
+      <ul class="services services_pm">
+        <li class="services__item ">
+          <h4>Atividades Extracurriculares e Parcerias</h4>
+          <ul>
+            <li class="indented-item">
+              <p align="justify">Adquirimos e implementamos laboratórios de alta qualidade no campus, fortalecendo as atividades de pesquisa e ensino;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Consolidamos programas de pesquisa e extensão, incluindo a retomada do programa Mulheres Mil e o fortalecimento do Pronatec, expandindo nosso impacto na comunidade;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Estabelecemos parcerias estratégicas com empresas locais, melhorando as oportunidades de estágio e a colaboração entre a academia e o setor privado;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Aprimoramos a comunicação entre os alunos e a administração, criando canais eficazes de feedback e diálogo aberto;</p>
+            </li>
+            <li class="indented-item">
+              <p>Desenvolvemos e aprovamos o regimento interno do campus, estabelecendo diretrizes claras para a gestão e o funcionamento da instituição;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Introduzimos órgãos administrativos importantes, como o Conselho de Campus, fortalecendo a governança e a tomada de decisões na instituição.</p>
+            </li>
+          </ul>
         </li>
       </ul>
       <div class="advantages">
@@ -144,26 +234,87 @@
     <div class="grid-container">
       <ul class="process">
         <li class="process__step process__step_research">
-          <div class="process__step-icon icon icon_research is-active"></div>
+          <div class="process__step-icon icon icon_deploy is-active"></div>
         </li>
         <li class="process__step-info process__step-info_research is-active">
-          <h3><span>Passo 1</span> &mdash; Definindo Metas</h3>
-          <p>Nosso primeiro passo é estabelecer metas claras para o IFBA, Campus Irecê. Queremos proporcionar um ambiente de aprendizado de qualidade, promover a pesquisa e inovação, além de fortalecer nossas conexões com a comunidade local.</p>
+          <h3><span>Eixo I </span> - Gestão</h3>
+          <p>Nosso compromisso é fortalecer o campus nas áreas de Ensino, Pesquisa e Extensão, orientando-nos por metas claras. Para atingir esses objetivos, propomos o seguinte:</p>
+          <br>
+          <ul>
+            <li class="indented-item"><p>Incentivar a democracia nas decisões por meio de colegiados participativos.</p></li>
+            <li class="indented-item"><p>Intermediar a regulamentação das paradas de transporte público na BA 148 em cooperação com prefeituras, facilitando o transporte dos alunos.</p></li>
+            <li class="indented-item"><p>Continuar os estudos técnicos para contratação de docentes efetivos em parceria com a Direção de Ensino e coordenações de curso.</p></li>
+            <li class="indented-item"><p>Investir em acervo bibliográfico e materiais de apoio às atividades docentes.</p></li>
+            <li class="indented-item"><p>Manter um boletim informativo para transparência das ações da gestão.</p></li>
+            <li class="indented-item"><p>Criar condições para um programa de incentivo à capacitação e qualificação de docentes e tecnicos administrativos.</p></li>
+            <li class="indented-item"><p>Consolidar e fortalecer a Comissão de Acessibilidade e Inclusão (CAPNE).</p></li>
+            <li class="indented-item"><p>Fortalecer o Núcleo de Estudos Afro-Brasileiros e Indígenas (NEABI).</p></li>
+            <li class="indented-item"><p>Consolidar o Núcleo de Atendimento às Pessoas com Necessidades Educacionais Específicas (NAC).</p></li>
+            <li class="indented-item"><p>Aumentar a participação dos alunos nas decisões do campus.</p></li>
+            <li class="indented-item"><p>Fortalecer os movimentos estudantis com espaços adequados.</p></li>
+            <li class="indented-item"><p>Implementar políticas educacionais e administrativas.</p></li>
+            <li class="indented-item"><p>Buscar expandir estrutura, quadro de pessoal e recursos financeiros e materiais.</p></li>
+            <li class="indented-item"><p>Aprimorar a gestão de pessoal.</p></li>
+            <li class="indented-item"><p>Para mais propostas dentro do eixo de gestão acesse: <a href="link-do-plano-de-gestao.html">Plano de Gestão</a></p></li>
+          </ul>
         </li>
         <li class="process__step process__step_develop">
           <div class="process__step-icon icon icon_develop"></div>
         </li>
         <li class="process__step-info process__step-info_develop">
-          <h3><span>Passo 2</span> &mdash; Implementação</h3>
-          <p>Após definirmos nossas metas, passaremos à implementação. Vamos trabalhar em conjunto para executar nossos planos, envolvendo alunos, professores e técnicos administrativos em iniciativas que promovam nosso crescimento.</p>
+          <h3><span>Eixo II</span> &mdash; Administração e Desenvolvimento Institucional</h3>
+          <p>A Diretoria de Administração busca aprimorar a gestão e políticas administrativas do Campus. Nossas metas incluem:</p>
+          <br>
+          <ul>
+            <li class="indented-item"><p>Construir a subestação abrigada do IFBA.</li>
+            <li class="indented-item"><p>Implantar o Restaurante Acadêmico com alimentação subsidiada.</li>
+            <li class="indented-item"><p>Promover a divulgação do campus para fortalecer sua presença na região.</li>
+            <li class="indented-item"><p>Reformar e modernizar o auditório com equipamentos multimídia.</li>
+            <li class="indented-item"><p>Criar uma interligação coberta entre módulos de aulas.</li>
+            <li class="indented-item"><p>Atuar junto à reitoria para melhorar registros acadêmicos, assistência estudantil e áreas de alunos e docentes.</li>
+            <li class="indented-item"><p>Modernizar salas de aulas.</li>
+            <li class="indented-item"><p>Reformar a quadra poliesportiva.</li>
+            <li class="indented-item"><p>Construir um Módulo vocacional para promover interação entre Ensino e Pesquisa.</li>
+            <li class="indented-item"><p>Melhorar a conectividade com fibra ótica e Wi-Fi em todo o campus.</li>
+            <li class="indented-item"><p>Implantar uma Sala de Atendimento Educacional Especializado.</li>
+            <li class="indented-item"><p>Aprimorar a organização de eventos institucionais com equipamentos e estrutura adequados.</li>
+            <li class="indented-item"><p>Implantar controle de acesso para a segurança da comunidade acadêmica.</li>
+            <li class="indented-item"><p>Criar um boletim informativo sobre atos administrativos.</li>
+            <li class="indented-item"><p>Articular parcerias com instituições públicas e privadas para desenvolver projetos institucionais.</li>
+            <li class="indented-item"><p>Realizar reuniões periódicas com coordenadores e servidores subordinados para melhorar a organização e desempenho do trabalho.</li>
+            <li class="indented-item"><p>Para mais propostas dentro do eixo de gestão acesse: <a href="link-do-plano-de-gestao.html">Plano de Gestão</a></p></li>
+
+          </ul>
         </li>
         <li class="process__step process__step_deploy">
           <div class="process__step-icon icon icon_deploy"></div>
         </li>
         <li class="process__step-info process__step-info_deploy">
-          <h3><span>Passo 3</span> &mdash; Avaliação Contínua</h3>
-          <p>A avaliação contínua é fundamental. Vamos acompanhar de perto nosso progresso, fazer ajustes conforme necessário e manter a transparência em nossa gestão. Seu feedback é valioso para nós.</p>
+          <h3><span>Eixo III</span> &mdash; Ensino</h3>
+          <p>No Eixo III, relacionado ao Ensino, as metas da Diretoria Acadêmica visam melhorar as atividades de ensino, pesquisa e extensão no IFBA - Campus Irecê. As propostas incluem:</p>
+          <br>
+          <ul>
+            <li class="indented-item"><p>Fomentar a integração setorial para a excelência na oferta de serviços.</p></li>
+            <li class="indented-item"><p>Aprimorar o programa de acolhimento para os alunos ingressantes nos cursos Técnicos de Nível Médio.</p></li>
+            <li class="indented-item"><p>Acompanhar o desempenho dos alunos e ajudá-los a superar desafios de aprendizado.</p></li>
+            <li class="indented-item"><p>Implementar cursos de aperfeiçoamento para docentes.</p></li>
+            <li class="indented-item"><p>Reestruturar as salas de aula para maior conforto e eficiência.</p></li>
+            <li class="indented-item"><p>Realizar estudos para facilitar a implantação de novos cursos.</p></li>
+            <li class="indented-item"><p>Implementar estratégias para reduzir a evasão escolar e fortalecer a permanência dos alunos até a conclusão.</p></li>
+            <li class="indented-item"><p>Estudar a necessidade de laboratórios para melhorias no ensino.</p></li>
+            <li class="indented-item"><p>Ampliar o investimento na formação dos servidores para inclusão de estudantes com necessidades específicas.</p></li>
+            <li class="indented-item"><p>Estabelecer medidas antirracistas e combate ao racismo no Campus, incluindo atendimento às leis 11.645/2008 e 10.639/2003.</p></li>
+            <li class="indented-item"><p>Consolidar o NAC (Núcleo de Arte e Cultura).</p></li>
+            <li class="indented-item"><p>Manter reuniões pedagógicas para atender pessoas com necessidades específicas e incentivar a inclusão educacional.</p></li>
+            <li class="indented-item"><p>Fortalecer o setor multidisciplinar no campus.</p></li>
+            <li class="indented-item"><p>Organizar calendários acadêmicos para atender as necessidades do ano letivo e garantir a participação da comunidade escolar.</p></li>
+            <li class="indented-item"><p>Melhorar o PROEJA, oferecendo educação aos jovens e adultos que não tiveram a oportunidade de se inserir.</p></li>
+            <li class="indented-item"><p>Elaborar um estudo para ampliar e melhorar o quadro de docentes do campus.</p></li>
+            <li class="indented-item"><p>Implantar uma política de incentivo às ações de intercâmbio.</p></li>
+          </ul>
         </li>
+
+
         <li class="process__step process__step_deliver">
           <div class="process__step-icon icon icon_deliver"></div>
         </li>
@@ -175,6 +326,29 @@
     </div>
   </div>
 </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <!-- Projetos-->
 <section class="common-section" id="projects">
   <header class="common-section__header">
