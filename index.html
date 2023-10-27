@@ -1,0 +1,721 @@
+<style>
+  .indented-item p {
+    margin-bottom: 10px; /* Você pode ajustar esse valor para o espaçamento desejado */
+  }
+</style>
+
+<style>
+  .topic {
+    display: none;
+  }
+
+  .read-more-toggle {
+    cursor: pointer;
+    color: blue;
+  }
+
+</style>
+<style>
+  /* Estilo padrão dos ícones do Instagram */
+  .fab.fa-instagram {
+    color: #000000; /* Cor padrão dos ícones do Instagram */
+  }
+
+  /* Estilo dos ícones do Instagram quando são clicados */
+  .fab.fa-instagram:active {
+    color: #000000; /* Cor que será aplicada ao clicar no ícone do Instagram */
+</style>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Início | Robério Rocha</title>
+  <meta name="description" content="Page-specific description">
+  <meta name="keywords" content="Page-specific keywords">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="build/static/images/favicons/r_libras.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../static/images/favicons/r_libras.png">
+  <link rel="apple-touch-icon-precomposed" href="static/images/favicons/r_libras.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="build/static/css/screen.min.css">
+  <link rel="stylesheet" href="build/static/css/custom.min.css">
+  <link rel="stylesheet" href="build/static/css/icon-font.less">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <script src="static/js/head.min.js"></script>
+
+</head>
+<body>
+<script>
+  progressJs().setOptions({overlayMode: true, theme: 'custom'}).start();
+
+  if (window.attachEvent) {
+    window.attachEvent('onload', function() {
+      progressJs().end();
+    });
+  } else {
+    if (window.onload) {
+      var curronload = window.onload;
+      var newonload = function() {
+        curronload();
+        progressJs().end();
+      };
+      window.onload = newonload;
+    } else {
+      window.onload = function() {
+        progressJs().end();
+      };
+    }
+  }
+</script>
+</body>
+</html>
+
+<!-- Header-->
+<header class="main-header">
+  <div class="first-nav">
+    <div class="container">
+      <nav class="first-nav__links">
+        <ul>
+        <!--  <li><a class="is-selected">Português</a></li>
+          <li><a href="#">English</a></li>
+          <li><a href="#">Español</a></li>-->
+        </ul>
+      </nav>
+      <a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">Menu</a>
+    </div>
+  </div>
+  <div class="second-nav js-nav">
+    <div class="container">
+      <a class="second-nav__logo"><span>RR</span></a>
+      <nav class="menu">
+        <ul>
+          <li><a class="js-link js-anchor is-selected" href="#home">Início</a></li>
+          <li><a class="js-link js-anchor" href="#about">Sobre Mim</a></li>
+          <li><a class="js-link js-anchor" href="#services">Experiência</a></li>
+          <li><a class="js-link js-anchor" href="#projects">Projetos</a></li>
+          <li><a class="js-link js-anchor" href="#process">Plano de Gestão</a></li>
+          <li><a class="js-link js-anchor" href="#contacts">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <style>
+    ul {
+      padding-left: 20px; /* Adicione o espaçamento desejado à esquerda */
+    }
+  </style>
+</header>
+<!-- Home section-->
+<section class="home-section" id="home">
+  <div class="home-section__bg"></div>
+  <div class="home-section__overlay">
+    <div class="container">
+      <header class="home-section__header">
+        <div class="candidate-info">
+          <!-- Adicione a imagem do candidato aqui à esquerda
+          <img src="candidato.jpg" alt="Foto do Candidato Robério Rocha">
+          <h1>Robério Rocha</h1> -->
+        </div>
+        <!--<h2>Candidato a Diretor Geral - IFBA, Campus Irecê.</h2>-->
+      </header>
+    </div>
+  </div>
+</section>
+
+<!-- About section-->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-card">
+      <header class="about-card__header" style="background: rgba(107, 142, 35, 0.5);">
+        <h2>Sobre Mim</h2>
+        <h4>Conheça o candidato</h4>
+      </header>
+      <div class="about-card__info">
+        <p>Olá! Sou Prof. Robério Rocha, candidato ao cargo de Diretor Geral do IFBA, Campus Irecê. Tenho o compromisso de promover a excelência na educação e contribuir para o crescimento da instituição no território de Irecê.</p>
+        <blockquote>
+          <p>Acredito na importância da educação de qualidade e estou empenhado em liderar nosso campus para alcançar seus objetivos e oferecer uma experiência educacional excepcional.</p>
+        </blockquote>
+        <p>Estou à disposição para esclarecer dúvidas, ouvir sugestões e trabalhar em conjunto para o sucesso do IFBA em Irecê.</p>
+        <p class="about-card__info-status"><span>Disponível para contato:</span> <a href="mailto:roberiorocha@ifba.edu.br">roberiorocha@ifba.edu.br</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Experiência e Competência-->
+<section class="common-section" id="services">
+  <div class="container">
+    <header class="common-section__header">
+      <h2>Experiência e Competência</h2>
+      <h4>Conheça as nossas conquistas enquanto diretor do campus.</h4>
+    </header>
+    <div class="grid-container">
+      <ul class="services services_advisory">
+
+        <li class="services__item item">
+          <h4>Infraestrutura e Recursos do Campus</h4>
+
+        <!--  <p align="justify"><strong> Durante minha gestão como Diretor Geral, realizamos melhorias notáveis no campus, incluindo.</strong></p>-->
+          <ul>
+            <li class="indented-item">
+              <p align="justify">Construção de um novo pavilhão de aulas e implantação de laboratórios;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Avanço na infraestrutura com o Galpão de Eletromecânica, ginásio poliesportivo e novo pavilhão de aulas;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Investimento em sustentabilidade com a implantação de uma Usina Fotovoltaica no campus;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Aquisição e renovação da frota de veículos: micro-ônibus, picape e van; e</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Implementação da atual rede de fibra ótica;</p>
+            </li>
+          </ul>
+        </li>
+
+
+        <li class="services__item ">
+          <h4>Educação e Cursos</h4>
+          <ul>
+            <li class="indented-item">
+              <p align="justify">Expansão do horário de funcionamento da Biblioteca com a contratação de novos profissionais;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Implantação do refeitório do campus;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Introdução do curso superior em Análise e Desenvolvimento de Sistemas (ADS) e Manutenção Industrial (MI), com avaliação positiva do MEC;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">novamos ao oferecer o Curso Técnico Integrado em Administração na modalidade de Educação de Jovens e Adultos.</p>
+            </li>
+          </ul>
+        </li>
+        <li class="services__item ">
+          <h4>Administração e Processos Internos</h4>
+          <ul>
+            <li class="indented-item">
+              <p align="justify">Padronizamos os procedimentos de remoção, redistribuição e pedidos de afastamento para estudo de todos os servidores;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Ampliamos nossa equipe com a contratação de mais servidores técnicos administrativos e docentes.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="services services_pm">
+        <li class="services__item ">
+          <h4>Apoio a Estudantes</h4>
+          <ul>
+            <li class="indented-item">
+              <p align="justify">Implementamos um programa de distribuição de lanches para os alunos, assegurando que tenham acesso a refeições adequadas durante o dia letivo;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Expandimos as oportunidades de estágio para nossos alunos, proporcionando experiências práticas valiosas em suas áreas de estudo.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="services services_pm">
+        <li class="services__item ">
+          <h4>Atividades Extracurriculares e Parcerias</h4>
+          <ul>
+            <li class="indented-item">
+              <p align="justify">Adquirimos e implementamos laboratórios de alta qualidade no campus, fortalecendo as atividades de pesquisa e ensino;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Consolidamos programas de pesquisa e extensão, incluindo a retomada do programa Mulheres Mil e o fortalecimento do Pronatec, expandindo nosso impacto na comunidade;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Estabelecemos parcerias estratégicas com empresas locais, melhorando as oportunidades de estágio e a colaboração entre a academia e o setor privado;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Aprimoramos a comunicação entre os alunos e a administração, criando canais eficazes de feedback e diálogo aberto;</p>
+            </li>
+            <li class="indented-item">
+              <p>Desenvolvemos e aprovamos o regimento interno do campus, estabelecendo diretrizes claras para a gestão e o funcionamento da instituição;</p>
+            </li>
+            <li class="indented-item">
+              <p align="justify">Introduzimos órgãos administrativos importantes, como o Conselho de Campus, fortalecendo a governança e a tomada de decisões na instituição.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="advantages">
+        <h2>Por que escolher Robério?</h2>
+        <blockquote>
+          <p>Comprometido com a educação de qualidade e o crescimento sustentável, estou pronto para liderar o IFBA, Campus Irecê. Junte-se a mim nessa jornada para uma instituição mais forte e uma experiência educacional excepcional.</p>
+          <cite>Robério Rocha, Candidato a Diretor Geral</cite>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projetos-->
+<section class="common-section" id="projects">
+  <header class="common-section__header">
+    <h2>Projetos</h2>
+    <p>Conheça nossas iniciativas e realizações</p>
+  </header>
+  <div class="projects-wrap">
+    <div class="grid-container">
+      <div class="projects">
+        <figure class="projects__item">
+          <img src="build/static/images/projects/restaurante3.jpg" alt="Projeto 1: Restaurante acadêmico">
+          <figcaption ><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Implantação do RA – Restaurante Acadêmico com alimentação estudantil subsidiada pelo Campus. </a></figcaption>
+        </figure>
+        <figure class="projects__item">
+          <img src="build/static/images/projects/transporte3.jpg" alt="Projeto 2: Transporte publico escolar">
+          <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Viabilizar junto às prefeituras do município de Irecê a regulamentação do transporte publica escolar para os alunos do campus.</a></figcaption>
+        </figure>
+        <figure class="projects__item">
+          <img src="build/static/images/projects/sala2.jpg" alt="Projeto 3: Modernizar e climatizar salas de aula">
+          <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Modernizar auditório e salas de aula, incluindo multimídia e climatização.</a></figcaption>
+        </figure>
+        <figure class="projects__item">
+          <img src="build/static/images/projects/bolsa.jpg" alt="Projeto 4: Assitencia estudantil">
+          <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Aprimoramento dos programas de assistência estudantil, estendendo o período de concessão de bolsas.
+          </a></figcaption>
+        </figure>
+        <figure class="projects__item">
+          <img src="build/static/images/projects/da.jpg" alt="Projeto 5: Movimento estudantil">
+          <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Empoderar os movimentos estudantis, proporcionando um espaço apropriado e uma sala devidamente equipada para o seu pleno funcionamento.
+          </a></figcaption>
+        </figure>
+        <figure class="projects__item">
+          <img src="build/static/images/projects/interligacao.jpg" alt="Projeto 6: Interligação de pavilhões">
+          <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Construir uma interligação coberta entre os pavilhões de aulas para melhorar o conforto e a mobilidade dos alunos.
+          </a></figcaption>
+        </figure>
+        <figure class="projects__item">
+          <img src="build/static/images/projects/novos_cursos.jpg" alt="Projeto 7: Novos cursos">
+          <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Implantar novos cursos de graduação de graduação para melhor atender a comunidade desta região.
+          </a></figcaption>
+        </figure>
+        <figure class="projects__item">
+          <img src="build/static/images/projects/intercambio.jpg" alt="Projeto 8: Intercambio">
+          <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Estabelecer uma política abrangente de incentivo às ações de intercâmbio, promovendo oportunidades e suporte para que nossos alunos. .
+          </a></figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Plano de Gestão-->
+<section class="common-section" id="process">
+  <div class="container">
+    <header class="common-section__header">
+      <h2>Plano de Gestão</h2>
+      <h4>Conheça nosso plano de Gestão. Para mais propostas dentro do eixo de gestão acesse: <a href="https://drive.google.com/file/d/17SR6VRrgEYp5IrCRsxjIm4IpvCFob2yU/view?usp=sharing" target="_blank">
+        Plano de Gestão</a></h4>
+
+    </header>
+    <div class="grid-container">
+      <ul class="process">
+
+        <li class="process__step process__step_research">
+          <div class="process__step-icon icon icon_deploy is-active"></div>
+        </li>
+        <li class="process__step-info process__step-info_research is-active">
+          <h3><span>Eixo I </span> - Gestão</h3>
+          <p>Nosso compromisso é fortalecer o campus nas áreas de Ensino, Pesquisa e Extensão, orientando-nos por metas claras. Para atingir esses objetivos, propomos o seguinte:</p>
+          <br>
+          <ul>
+            <li class="indented-item"><p>Incentivar a democracia nas decisões por meio de colegiados participativos.</p></li>
+            <li class="indented-item"><p>Intermediar a regulamentação das paradas de transporte público na BA 148 em cooperação com prefeituras, facilitando o transporte dos alunos.</p></li>
+            <li class="indented-item"><p>Continuar os estudos técnicos para contratação de docentes efetivos em parceria com a Direção de Ensino e coordenações de curso.</p></li>
+            <li class="indented-item"><p>Investir em acervo bibliográfico e materiais de apoio às atividades docentes.</p></li>
+            <li class="indented-item"><p>Manter um boletim informativo para transparência das ações da gestão.</p></li>
+            <li class="indented-item"><p>Criar condições para um programa de incentivo à capacitação e qualificação de docentes e tecnicos administrativos.</p></li>
+            <li class="indented-item"><p>Consolidar e fortalecer a Comissão de Acessibilidade e Inclusão (CAPNE).</p></li>
+            <li class="indented-item"><p>Fortalecer o Núcleo de Estudos Afro-Brasileiros e Indígenas (NEABI).</p></li>
+            <li class="indented-item"><p>Consolidar o Núcleo de Atendimento às Pessoas com Necessidades Educacionais Específicas (NAC).</p></li>
+            <li class="indented-item"><p>Aumentar a participação dos alunos nas decisões do campus.</p></li>
+            <li class="indented-item"><p>Fortalecer os movimentos estudantis com espaços adequados.</p></li>
+            <li class="indented-item"><p>Implementar políticas educacionais e administrativas.</p></li>
+            <li class="indented-item"><p>Buscar expandir estrutura, quadro de pessoal e recursos financeiros e materiais.</p></li>
+            <li class="indented-item"><p>Aprimorar a gestão de pessoal.</p></li>
+            <!--<li class="indented-item"><p>Para mais propostas dentro do eixo de gestão acesse: <a href="https://drive.google.com/file/d/17SR6VRrgEYp5IrCRsxjIm4IpvCFob2yU/view?usp=sharing">
+            Plano de Gestão</a></p></li>-->
+          </ul>
+        </li>
+        <li class="process__step process__step_develop">
+          <div class="process__step-icon icon icon_deploy is-active"></div>
+        </li>
+        <li class="process__step-info process__step-info_develop">
+          <h3><span>Eixo II</span> &mdash; Administração e Desenvolvimento Institucional</h3>
+          <p>A Diretoria de Administração busca aprimorar a gestão e políticas administrativas do Campus. Nossas metas incluem:</p>
+          <br>
+          <ul>
+            <li class="indented-item"><p>Construir a subestação abrigada do IFBA.</li>
+            <li class="indented-item"><p>Implantar o Restaurante Acadêmico com alimentação subsidiada.</li>
+            <li class="indented-item"><p>Promover a divulgação do campus para fortalecer sua presença na região.</li>
+            <li class="indented-item"><p>Reformar e modernizar o auditório com equipamentos multimídia.</li>
+            <li class="indented-item"><p>Criar uma interligação coberta entre módulos de aulas.</li>
+            <li class="indented-item"><p>Atuar junto à reitoria para melhorar registros acadêmicos, assistência estudantil e áreas de alunos e docentes.</li>
+            <li class="indented-item"><p>Modernizar salas de aulas.</li>
+            <li class="indented-item"><p>Reformar a quadra poliesportiva.</li>
+            <li class="indented-item"><p>Construir um Módulo vocacional para promover interação entre Ensino e Pesquisa.</li>
+            <li class="indented-item"><p>Melhorar a conectividade com fibra ótica e Wi-Fi em todo o campus.</li>
+            <li class="indented-item"><p>Implantar uma Sala de Atendimento Educacional Especializado.</li>
+            <li class="indented-item"><p>Aprimorar a organização de eventos institucionais com equipamentos e estrutura adequados.</li>
+            <li class="indented-item"><p>Implantar controle de acesso para a segurança da comunidade acadêmica.</li>
+            <li class="indented-item"><p>Criar um boletim informativo sobre atos administrativos.</li>
+            <li class="indented-item"><p>Articular parcerias com instituições públicas e privadas para desenvolver projetos institucionais.</li>
+            <li class="indented-item"><p>Realizar reuniões periódicas com coordenadores e servidores subordinados para melhorar a organização e desempenho do trabalho.</li>
+            <!-- <li class="indented-item"><p>Para mais propostas dentro do eixo de gestão acesse: <a href="https://drive.google.com/file/d/17SR6VRrgEYp5IrCRsxjIm4IpvCFob2yU/view?usp=sharing">Plano de Gestão</a></p></li>
+ -->
+           </ul>
+         </li>
+         <li class="process__step process__step_deploy">
+           <div class="process__step-icon icon icon_deploy"></div>
+         </li>
+         <li class="process__step-info process__step-info_deploy">
+           <h3><span>Eixo III</span> &mdash; Ensino</h3>
+           <p>No Eixo III, relacionado ao Ensino, as metas da Direção geral visam melhorar as atividades de ensino, pesquisa e extensão no IFBA - Campus Irecê.
+             As propostas incluem:</p>
+           <br>
+           <ul>
+             <li class="indented-item"><p>Fomentar a integração setorial para a excelência na oferta de serviços.</p></li>
+             <li class="indented-item"><p>Aprimorar o programa de acolhimento para os alunos ingressantes nos cursos Técnicos de Nível Médio.</p></li>
+             <li class="indented-item"><p>Acompanhar o desempenho dos alunos e ajudá-los a superar desafios de aprendizado.</p></li>
+             <li class="indented-item"><p>Implementar cursos de aperfeiçoamento para docentes.</p></li>
+             <li class="indented-item"><p>Reestruturar as salas de aula para maior conforto e eficiência.</p></li>
+             <li class="indented-item"><p>Realizar estudos para facilitar a implantação de novos cursos.</p></li>
+             <li class="indented-item"><p>Implementar estratégias para reduzir a evasão escolar e fortalecer a permanência dos alunos até a conclusão.</p></li>
+             <li class="indented-item"><p>Estudar a necessidade de laboratórios para melhorias no ensino.</p></li>
+             <li class="indented-item"><p>Ampliar o investimento na formação dos servidores para inclusão de estudantes com necessidades específicas.</p></li>
+             <li class="indented-item"><p>Estabelecer medidas antirracistas e combate ao racismo no Campus, incluindo atendimento às leis 11.645/2008 e 10.639/2003.</p></li>
+             <li class="indented-item"><p>Consolidar o NAC (Núcleo de Arte e Cultura).</p></li>
+             <li class="indented-item"><p>Manter reuniões pedagógicas para atender pessoas com necessidades específicas e incentivar a inclusão educacional.</p></li>
+             <li class="indented-item"><p>Fortalecer o setor multidisciplinar no campus.</p></li>
+             <li class="indented-item"><p>Organizar calendários acadêmicos para atender as necessidades do ano letivo e garantir a participação da comunidade escolar.</p></li>
+             <li class="indented-item"><p>Melhorar o PROEJA, oferecendo educação aos jovens e adultos que não tiveram a oportunidade de se inserir.</p></li>
+             <li class="indented-item"><p>Elaborar um estudo para ampliar e melhorar o quadro de docentes do campus.</p></li>
+            <!-- <li class="indented-item"><p>Para mais propostas dentro do eixo de ensino acesse: <a href="https://drive.google.com/file/d/17SR6VRrgEYp5IrCRsxjIm4IpvCFob2yU/view?usp=sharing">Plano de Gestão</a></p></li>
+  -->
+         </ul>
+         </li>
+         <li class="process__step process__step_deliver">
+           <div class="process__step-icon icon icon_deploy is-active"></div>
+         </li>
+         <li class="process__step-info process__step-info_deliver">
+           <h3><span>Eixo IV</span> &mdash; Extensão</h3>
+           <p>O Eixo IV se concentra na Extensão, destacando sua importância como um processo educativo, cultural e científico que integra ensino e pesquisa, promovendo uma relação transformadora entre a
+             instituição de ensino e a sociedade. As propostas para a extensão incluem:</p>
+           <br>
+           <ul>
+             <li class="indented-item"><p>Incluir no calendário acadêmico as datas dos projetos de extensão já consolidados no campus.</li>
+             <li class="indented-item"><p>Aumentar a quantidade de editais de extensão no campus.</li>
+             <li class="indented-item"><p>Participar e oferecer o Pronatec em parceria com municípios da região.</li>
+             <li class="indented-item"><p>Expandir o programa "Mulheres Mil" aumentando a diversidade de cursos.</li>
+             <li class="indented-item"><p>Ofertar cursos de Formação Inicial e Continuada (FIC) para atender demandas emergenciais do mercado de trabalho e da sociedade.</li>
+             <li class="indented-item"><p>Implementar uma competição de foguetes intercolegial no Território de Irecê.</li>
+             <li class="indented-item"><p>Desenvolver projetos de incentivo à pesquisa e extensão.</li>
+             <li class="indented-item"><p>Fortalecer o setor de recursos naturais e o programa de coleta seletiva solidária.</li>
+             <li class="indented-item"><p>Melhorar as condições da Coordenação de Estágio para atender um maior número de alunos.</li>
+             <li class="indented-item"><p>Criar estratégias de apoio às atividades de estágio dos alunos.</li>
+             <li class="indented-item"><p>Fortalecer e expandir parcerias com empresas públicas e privadas para aumentar as oportunidades de estágio.</li>
+             <li class="indented-item"><p>Implementar uma política para coletar informações sobre os alunos egressos.</li>
+             <li class="indented-item"><p>Aprimorar os eventos realizados no campus Irecê.</li>
+             <li class="indented-item"><p>Incentivar a submissão de projetos de extensão em conjunto com atividades de ensino, promovendo a cultura da leitura tradicional.</li>
+             <li class="indented-item"><p>Oferecer minicursos e oficinas para auxiliar os docentes na elaboração de projetos de extensão.</li>
+             <li class="indented-item"><p>Desenvolver estratégias de conscientização da comunidade interna e externa sobre a importância da extensão, seja como atividade formativa, pesquisa ou transformação social.</li>
+             <!--<li class="indented-item"><p>Para mais propostas dentro do eixo de extensão acesse: <a href="link-do-plano-de-gestao.html">Plano de Gestão</a></p></li>
+          -->
+           </ul>
+         </li>
+     </div>
+   </div>
+ </section>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <!-- Plano de Gestão-->
+<section class="common-section" id="process2">
+  <div class="container">
+    <div class="grid-container">
+      <ul class="process">
+
+        <li class="process__step process__step_research">
+          <div class="process__step-icon icon icon_deploy is-active"></div>
+        </li>
+        <li class="process__step-info process__step-info_research is-active">
+          <h3><span>Eixo V</span> &mdash; Pesquisa, Pós-Graduação e Inovação Tecnológica</h3>
+          <p>O Eixo V, relacionado à Pesquisa, Pós-Graduação e Inovação Tecnológica, tem como objetivo promover atividades de pesquisa e disseminação do conhecimento com um foco
+            social, bem como fornecer soluções tecnológicas para atender às necessidades da sociedade e do setor produtivo. A integração entre ensino,
+            pesquisa e extensão é um dos principais objetivos deste eixo. Suas propostas incluem:</p>
+          <br>
+          <ul>
+            <li class="indented-item"><p>Fortalecer programas e projetos de pesquisa no Campus.</p></li>
+            <li class="indented-item"><p>Reforçar a formação técnico-científica dos estudantes para aumentar o acesso à cultura científica e buscar instalações específicas para profissionais de pesquisa e seus bolsistas.</p></li>
+            <li class="indented-item"><p>Aprimorar eventos, simpósios, feiras, workshops e congressos relacionados à pesquisa no Campus.</p></li>
+            <li class="indented-item"><p>Criar programas e minicursos para auxiliar os docentes em projetos de pesquisa.</p></li>
+            <li class="indented-item"><p>Estabelecer grupos de pesquisa com base nas competências técnicas e científicas dos profissionais envolvidos.</p></li>
+            <li class="indented-item"><p>Criar uma revista de fomento para divulgar projetos de pesquisa do Instituto.</p></li>
+            <li class="indented-item"><p>Planejar, coordenar e acompanhar atividades e políticas de pesquisa, inovação e pós-graduação no Campus.</p></li>
+            <li class="indented-item"><p>Fomentar parcerias e intercâmbios com instituições e empresas públicas e privadas na área de pesquisa, ciência, tecnologia, inovação e transferência de tecnologia.</p></li>
+            <li class="indented-item"><p>Promover a integração entre o Departamento de Pesquisa e Inovação e o Departamento de Pós-graduação, além de integrar pesquisa, ensino e extensão.</p></li>
+            <li class="indented-item"><p>Divulgar os resultados das pesquisas para a comunidade interna e externa.</p></li>
+            <li class="indented-item"><p>Implementar pelo menos um programa de pós-graduação no campus.</p></li>
+            <!--  <li class="indented-item"><p>Para mais propostas dentro do eixo de Pesquisa, Pós-Graduação e Inovação acesse: <a href="https://drive.google.com/file/d/17SR6VRrgEYp5IrCRsxjIm4IpvCFob2yU/view?usp=sharing">Plano de Gestão</a></p></li>
+   -->
+            </ul>
+          </li>
+
+
+
+          <li class="process__step process__step_develop">
+            <div class="process__step-icon icon icon_deploy is-active"></div>
+          </li>
+          <li class="process__step-info process__step-info_develop">
+            <h3><span>Eixo VI</span> &mdash; Gestão de Pessoas</h3>
+            <p>O Eixo VI, relacionado à Gestão de Pessoas, tem como objetivo gerir e coordenar as ações de administração e desenvolvimento de pessoal no Campus Irecê, com foco no aprimoramento da qualidade de vida no trabalho dos servidores. Suas propostas incluem:</p>
+            <br>
+            <ul>
+              <li class="indented-item"><p>Aprimorar a política de capacitação e qualificação dos servidores do campus.</p></li>
+              <li class="indented-item"><p>Oferecer oportunidades de qualificação, inclusive com afastamentos quando necessário, conforme a Lei.</p></li>
+              <li class="indented-item"><p>Desenvolver um programa para melhorar a qualidade de vida e promover a saúde dos servidores.</p></li>
+              <li class="indented-item"><p>Melhorar a estrutura da Coordenação de Gestão de Pessoas para atender eficazmente as demandas dos servidores.</p></li>
+              <li class="indented-item"><p>Realizar estudos contínuos sobre a necessidade de movimentação de pessoal.</p></li>
+              <li class="indented-item"><p>Criar Unidades SEI individualizadas para garantir restrições nos processos de cunho pessoal.</p></li>
+              <li class="indented-item"><p>Ampliar a política de contratação de estagiários para aumentar a força de trabalho no campus e promover o desenvolvimento de competências.</p></li>
+              <li class="indented-item"><p>Otimizar a política de contratação de professores substitutos.</p></li>
+              <li class="indented-item"><p>Estabelecer mecanismos efetivos de interseção com a DGP para atender às necessidades dos servidores.</p></li>
+              <li class="indented-item"><p>Aprimorar a política de teletrabalho e expandir as condições efetivas de trabalho.</p></li>
+              <li class="indented-item"><p>Aprimorar a política de concessão de jornada flexibilizada para os TAEs.</p></li>
+              <li class="indented-item"><p>Implementar uma política de acompanhamento das carreiras dos servidores visando incentivar o desenvolvimento pessoal e o avanço nas promoções e progressões dentro do plano de carreira de cada categoria.</p></li>
+            <!--  <li class="indented-item"><p>Para mais propostas dentro do eixo gestão de pessoa acesse: <a href="https://drive.google.com/file/d/17SR6VRrgEYp5IrCRsxjIm4IpvCFob2yU/view?usp=sharing">Plano de Gestão</a></p></li>
+   -->
+            </ul>
+          </li>
+          <li class="process__step process__step_deploy">
+            <div class="process__step-icon icon icon_deploy"></div>
+          </li>
+          <li class="process__step-info process__step-info_deploy">
+            <h3><span>Eixo VII</span> &mdash; Comunicação Institucional</h3>
+            <p>O Eixo VII, sobre Comunicação Institucional, visa garantir a transparência e promover o IFBA - Campus Irecê junto à comunidade interna e externa. As propostas incluem:</p>
+            <br>
+            <ul>
+              <li class="indented-item"><p>Reestruturar a Coordenação de Comunicação com uma equipe mais robusta.</p></li>
+              <li class="indented-item"><p>Consolidar a atualização do site institucional, envolvendo todos os setores do campus.</p></li>
+              <li class="indented-item"><p>Implementar uma política de visibilidade tanto dentro quanto fora do campus.</p></li>
+              <li class="indented-item"><p>Ampliar e aprimorar os canais de comunicação.</p></li>
+              <li class="indented-item"><p>Utilizar as TVs das salas de aula para facilitar o acesso à informação e comunicação.</p></li>
+              <li class="indented-item"><p>Estabelecer parcerias com meios de comunicação locais e regionais para divulgar o IFBA - Campus Irecê e cobrir eventos.</p></li>
+              <li class="indented-item"><p>Implementar uma política de divulgação dos processos de ingresso no IFBA.</p></li>
+            <!--  <li class="indented-item"><p>Para mais propostas dentro do eixo de Comunicação Institucional acesse: <a href="https://drive.google.com/file/d/17SR6VRrgEYp5IrCRsxjIm4IpvCFob2yU/view?usp=sharing">Plano de Gestão</a></p></li>
+   -->
+            </ul>
+          </li>
+
+        </ul>
+
+
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- About section
+  <section class="sugestion-section" id="about">
+    <div class="container">
+      <div class="about-card">
+        <header class="about-card__header" style="background: rgba(107, 142, 35, 0.5);">
+          <h2>Sobre Mim</h2>
+          <h4>Conheça o candidato</h4>
+        </header>
+        <div class="about-card__info">
+          <p>Olá! Sou Prof. Robério Rocha, candidato ao cargo de Diretor Geral do IFBA, Campus Irecê. Tenho o compromisso de promover a excelência na educação e contribuir para o crescimento da instituição no território de Irecê.</p>
+          <blockquote>
+            <p>Acredito na importância da educação de qualidade e estou empenhado em liderar nosso campus para alcançar seus objetivos e oferecer uma experiência educacional excepcional.</p>
+          </blockquote>
+          <p>Estou à disposição para esclarecer dúvidas, ouvir sugestões e trabalhar em conjunto para o sucesso do IFBA em Irecê.</p>
+          <p class="about-card__info-status"><span>Disponível para contato:</span> <a href="mailto:roberiorocha@ifba.edu.br">roberiorocha@ifba.edu.br</a></p>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+<!-- Depoimentos
+<section class="common-section" id="testimonials">
+  <div class="container">
+    <header class="common-section__header">
+      <h2>Depoimentos</h2>
+      <p>Veja o que as pessoas estão dizendo</p>
+    </header>
+    <div class="grid-container">
+      <ul class="testimonials">
+        <li class="testimonials__item">
+          <img src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet">
+          <blockquote>
+            <p class="icon icon_ql">Robério Rocha é um líder inspirador comprometido com a educação de qualidade. Sua visão e paixão são contagiantes, e estou ansioso para ver as melhorias que ele trará para o IFBA, Campus Irecê.</p>
+            <cite><span class="name">Maria Silva </span><span class="role">Aluna</span></cite>
+          </blockquote>
+        </li>
+        <li class="testimonials__item">
+          <img src="static/images/logos/placeholder.png" alt="Depoimento 2">
+          <blockquote>
+            <p class="icon icon_ql">"Como professor, estou animado com o compromisso do Robério Rocha com a pesquisa e a inovação. Isso abrirá novas oportunidades para nossos alunos e fortalecerá nossa instituição.</p>
+            <cite><span class="name">João Pereira </span><span class="role">Professor</span></cite>
+          </blockquote>
+        </li>
+        <li class="testimonials__item">
+          <img src="static/images/logos/placeholder.png" alt="Depoimento 3s">
+          <blockquote>
+            <p class="icon icon_ql">"É ótimo ver um líder que valoriza o envolvimento comunitário. O IFBA, Campus Irecê desempenha um papel vital na nossa comunidade, e estou confiante de que o Robério Rocha o fortalecerá ainda mais.</p>
+            <cite><span class="name">Luisa Souza </span><span class="role">Membro da Comunidade</span></cite>
+          </blockquote>
+        </li>
+      </ul>
+      <ul class="testimonials">
+        <li class="testimonials__item">
+          <img src="static/images/logos/placeholder.png" alt="Depoimento 4">
+          <blockquote>
+            <p class="icon icon_ql">"Robério Rocha é um visionário que compreende a importância da educação e do crescimento sustentável. Seu compromisso com a excelência acadêmica e o desenvolvimento da instituição é notável. Estou ansioso para ver o IFBA, Campus Irecê prosperar sob sua liderança."</p>
+            <cite><span class="name">Ana Cardoso </span><span class="role">Aluna de ADS</span></cite>
+          </blockquote>
+
+        </li>
+        <li class="testimonials__item">
+          <img src="static/images/logos/placeholder.png" alt="Depoimento 5">
+          <blockquote>
+            <p class="icon icon_ql">"Como técnico administrativo, estou impressionado com a dedicação do Robério Rocha em criar um ambiente de trabalho inclusivo e colaborativo. Suas iniciativas visando ao bem-estar da equipe e ao crescimento da instituição são admiráveis. É ótimo fazer parte dessa jornada com ele."</p>
+            <cite><span class="name">Carlos Mendes </span><span class="role">Técnico Administrativo</span></cite>
+          </blockquote>
+
+        </li>
+        <li class="testimonials__item">
+          <img src="static/images/logos/placeholder.png" alt="Depoimento 6">
+          <blockquote>
+            <p class="icon icon_ql">"Robério Rocha é um diretor inspirador e comprometido com a missão do IFBA, Campus Irecê. Sua abordagem transparente e sua busca contínua por melhorias no currículo acadêmico são louváveis. Tenho confiança em seu papel de liderança na nossa instituição."</p>
+            <cite><span class="name">Eduardo Santos </span><span class="role">Pai de um Aluno</span></cite>
+          </blockquote>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>-->
+<!-- Contacts section -->
+<div class="contacts-section" id="contacts">
+  <div class="container">
+    <section class="contact-card">
+      <header class="contact-card__header">
+        <h2>Informações para contato</h2>
+        <h4>Robério Batista Rocha</h4>
+      </header>
+      <div class="contact-info">
+       <!-- <div class="contact-info__logo">RR</div>-->
+        <div class="contact-info__logo">
+          <img src="build/static/images/contato.jpg" alt="Descrição da imagem" width="190">
+        </div>
+        <div class="contact-info__group">
+          <div class="contact-info__additional">
+            <p>Juntos, construiremos um campus referencia no estado da Bahia. </p>
+            <p>Vamos continuar avançando com Roberio Rocha para o</p>
+            <p>fortalecimento da edução, pesquisa e extensão!</p>
+          </div>
+          <div class="contact-info__vcard vcard">
+            <h4 class="fn org">Robério Batista Rocha</h4>
+            <p class="role title">Professor do Instituto Federal da Bahia - Campus Irecê.</p>
+            <p class="icon icon_location">
+              <a class="adr js-anchor" href="#gmap">
+                <span class="country-name">Irecê</span>,
+                <span class="locality">Bahia</span>
+              </a>
+            </p>
+            <p class="icon icon_mail">
+              <a class="email" href="mailto:roberiorocha@ifba.edu.br">roberiorocha@ifba.edu.br</a>
+            </p>
+            <p class="icon icon_phone">
+              <a class="email" href="tel:74 99932 6010">74 99932 6010</a>
+            </p>
+            <!-- Ícone do Facebook -->
+            <p><a href="https://www.facebook.com/roberio.batistarocha.5?mibextid=LQQJ4d" target="_blank">
+              <i class="fab fa-facebook icon-facebook" style="font-size: 24px;"></i> Facebook
+            </a></p>
+            <p><a href="https://instagram.com/roberiobatistarocha?igshid=MzRlODBiNWFlZA==" target="_blank">
+              <i class="fab fa-instagram icon-instagram"></i> Instagram
+            </a></p>
+
+          </div>
+          <ul class="contact-info__social">
+            <!--<li><a class="icon icon_fb" href="https://www.facebook.com/roberio.batistarocha.5?mibextid=LQQJ4d" rel="nofollow"  target="_blank">Estou no Facebook</a></li>
+            <li><a class="icon icon_twi" href="URL-DO-TWITTER" rel="nofollow">My Twitter</a></li>
+            <li><a class="icon icon_gplus" href="URL-DO-GOOGLE-PLUS" rel="nofollow">I'm on Google+</a></li>
+            <li><a class="icon icon_vk" href="URL-DO-VK" rel="nofollow">I'm in Vk</a></li>
+            <li><a class="icon icon_in" href="URL-DO-LINKEDIN" rel="nofollow">My Linkedin profile</a></li>-->
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="gmap" id="gmap"></div>
+</div>
+
+<!-- Footer -->
+<footer class="main-footer">
+  <div class="container">
+    <p class="main-footer__copyright">
+      &copy;&nbsp;<span>Robério Rocha</span>
+    </p>
+    <a class="main-footer__gotop icon icon_gotop js-anchor" href="#home">To top!</a>
+    <p class="main-footer__links">
+      Designed by&nbsp;<a href="http://orlovmax.com">@</a>
+    </p>
+  </div>
+</footer>
+<script src="build/static/js/body.min.js"></script>
+</body>
+</html>
