@@ -15,30 +15,67 @@
   }
 
 </style>
+<style>
+  /* Estilo padrão dos ícones do Instagram */
+  .fab.fa-instagram {
+    color: #000000; /* Cor padrão dos ícones do Instagram */
+  }
+
+  /* Estilo dos ícones do Instagram quando são clicados */
+  .fab.fa-instagram:active {
+    color: #000000; /* Cor que será aplicada ao clicar no ícone do Instagram */
+</style>
+
+
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | Robério Rocha para Diretor Geral - IFBA, Campus Irecê</title>
-  <meta name="description" content="Conheça Robério Rocha, seu candidato a Diretor Geral do IFBA, Campus Irecê">
-  <meta name="keywords" content="Robério Rocha, IFBA, Campus Irecê, Diretor Geral, Educação">
+  <meta http-equiv="X-UA-Compatible" content="IE edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Início | Robério Rocha</title>
+  <meta name="description" content="Page-specific description">
+  <meta name="keywords" content="Page-specific keywords">
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="shortcut icon" href="static/images/favicons/favicon.png" type="image/x-icon">
-  <link rel="apple-touch-icon" href="static/images/favicons/apple-touch-icon.png">
-  <link rel="apple-touch-icon-precomposed" href="static/images/favicons/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="static/images/favicons/r_libras.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="static/images/favicons/r_libras.png">
+  <link rel="apple-touch-icon-precomposed" href="static/images/favicons/r_libras.png">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="static/css/screen.min.css">
   <link rel="stylesheet" href="static/css/custom.min.css">
+  <link rel="stylesheet" href="static/css/icon-font.less">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <script src="static/js/head.min.js"></script>
+
 </head>
 <body>
 <script>
-  // Adicione aqui o script relevante para o seu website.
+  progressJs().setOptions({overlayMode: true, theme: 'custom'}).start();
+
+  if (window.attachEvent) {
+    window.attachEvent('onload', function() {
+      progressJs().end();
+    });
+  } else {
+    if (window.onload) {
+      var curronload = window.onload;
+      var newonload = function() {
+        curronload();
+        progressJs().end();
+      };
+      window.onload = newonload;
+    } else {
+      window.onload = function() {
+        progressJs().end();
+      };
+    }
+  }
 </script>
+</body>
+</html>
+
 <!-- Header-->
 <header class="main-header">
   <div class="first-nav">
@@ -75,7 +112,6 @@
   </style>
 </header>
 <!-- Home section-->
-<!-- Home section-->
 <section class="home-section" id="home">
   <div class="home-section__bg"></div>
   <div class="home-section__overlay">
@@ -106,7 +142,7 @@
           <p>Acredito na importância da educação de qualidade e estou empenhado em liderar nosso campus para alcançar seus objetivos e oferecer uma experiência educacional excepcional.</p>
         </blockquote>
         <p>Estou à disposição para esclarecer dúvidas, ouvir sugestões e trabalhar em conjunto para o sucesso do IFBA em Irecê.</p>
-        <p class="about-card__info-status"><span>Disponível para contato:</span> <a href="mailto:roberio.rocha@ifba.edu.br">roberio.rocha@ifba.edu.br</a></p>
+        <p class="about-card__info-status"><span>Disponível para contato:</span> <a href="mailto:roberiorocha@ifba.edu.br">roberiorocha@ifba.edu.br</a></p>
       </div>
     </div>
   </div>
@@ -116,7 +152,7 @@
   <div class="container">
     <header class="common-section__header">
       <h2>Experiência e Competência</h2>
-      <h4>Conheça as nossas conquistas enquanto diretor do campus</h4>
+      <h4>Conheça as nossas conquistas enquanto diretor do campus.</h4>
     </header>
     <div class="grid-container">
       <ul class="services services_advisory">
@@ -490,7 +526,9 @@
             <li class="indented-item"><p>Implementar uma política de divulgação dos processos de ingresso no IFBA.</p></li>
           </ul>
         </li>
+
       </ul>
+
 
     </div>
   </div>
@@ -518,7 +556,27 @@
 <br>
 <br>
 <br>
-<!-- Depoimentos-->
+<!-- About section
+<section class="sugestion-section" id="about">
+  <div class="container">
+    <div class="about-card">
+      <header class="about-card__header" style="background: rgba(107, 142, 35, 0.5);">
+        <h2>Sobre Mim</h2>
+        <h4>Conheça o candidato</h4>
+      </header>
+      <div class="about-card__info">
+        <p>Olá! Sou Prof. Robério Rocha, candidato ao cargo de Diretor Geral do IFBA, Campus Irecê. Tenho o compromisso de promover a excelência na educação e contribuir para o crescimento da instituição no território de Irecê.</p>
+        <blockquote>
+          <p>Acredito na importância da educação de qualidade e estou empenhado em liderar nosso campus para alcançar seus objetivos e oferecer uma experiência educacional excepcional.</p>
+        </blockquote>
+        <p>Estou à disposição para esclarecer dúvidas, ouvir sugestões e trabalhar em conjunto para o sucesso do IFBA em Irecê.</p>
+        <p class="about-card__info-status"><span>Disponível para contato:</span> <a href="mailto:roberiorocha@ifba.edu.br">roberiorocha@ifba.edu.br</a></p>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+<!-- Depoimentos
 <section class="common-section" id="testimonials">
   <div class="container">
     <header class="common-section__header">
@@ -577,7 +635,7 @@
       </ul>
     </div>
   </div>
-</section>
+</section>-->
 <!-- Contacts section -->
 <div class="contacts-section" id="contacts">
   <div class="container">
@@ -594,8 +652,8 @@
         <div class="contact-info__group">
           <div class="contact-info__additional">
             <p>Juntos, construiremos um campus referencia no estado da Bahia. </p>
-            <p>Vamos continuar avançando com Roberio Rocha para o fortalecimento</p>
-            <p>da edução, pesquisa e extensão!</p>
+            <p>Vamos continuar avançando com Roberio Rocha para o</p>
+            <p>fortalecimento da edução, pesquisa e extensão!</p>
           </div>
           <div class="contact-info__vcard vcard">
             <h4 class="fn org">Robério Batista Rocha</h4>
@@ -609,18 +667,24 @@
             <p class="icon icon_mail">
               <a class="email" href="mailto:roberiorocha@ifba.edu.br">roberiorocha@ifba.edu.br</a>
             </p>
-
             <p class="icon icon_phone">
               <a class="email" href="tel:74 99932 6010">74 99932 6010</a>
             </p>
+            <!-- Ícone do Facebook -->
+            <p><a href="https://www.facebook.com/roberio.batistarocha.5?mibextid=LQQJ4d" target="_blank">
+              <i class="fab fa-facebook icon-facebook" style="font-size: 24px;"></i> Facebook
+            </a></p>
+            <p><a href="https://instagram.com/roberiobatistarocha?igshid=MzRlODBiNWFlZA==" target="_blank">
+              <i class="fab fa-instagram icon-instagram"></i> Instagram
+            </a></p>
+
           </div>
           <ul class="contact-info__social">
-            <li><a class="icon icon_fb" rel="nofollow">I'm on Facebook</a></li>
-            <li><a class="icon icon_twi" rel="nofollow">My Twitter</a></li>
-            <li><a class="icon icon_gplus" rel="nofollow">I'm on Google+</a></li>
-            <li><a class="icon icon_vk" rel="nofollow">I'm in Vk</a></li>
-            <li><a class="icon icon_in" rel="nofollow">My Linkedin profile</a></li>
-            <li><a class="icon icon_rss" rel="nofollow">RSS feed... maybe</a></li>
+            <!--<li><a class="icon icon_fb" href="https://www.facebook.com/roberio.batistarocha.5?mibextid=LQQJ4d" rel="nofollow"  target="_blank">Estou no Facebook</a></li>
+            <li><a class="icon icon_twi" href="URL-DO-TWITTER" rel="nofollow">My Twitter</a></li>
+            <li><a class="icon icon_gplus" href="URL-DO-GOOGLE-PLUS" rel="nofollow">I'm on Google+</a></li>
+            <li><a class="icon icon_vk" href="URL-DO-VK" rel="nofollow">I'm in Vk</a></li>
+            <li><a class="icon icon_in" href="URL-DO-LINKEDIN" rel="nofollow">My Linkedin profile</a></li>-->
           </ul>
         </div>
       </div>
@@ -628,6 +692,7 @@
   </div>
   <div class="gmap" id="gmap"></div>
 </div>
+
 <!-- Footer -->
 <footer class="main-footer">
   <div class="container">
