@@ -2,6 +2,9 @@
   .indented-item p {
     margin-bottom: 10px; /* Você pode ajustar esse valor para o espaçamento desejado */
   }
+    .process__step-info {
+    display: none;
+  }
 </style>
 
 <style>
@@ -119,6 +122,17 @@
 </head>
 <body>
 <script>
+
+    function toggleInfo(icon) {
+    var info = document.getElementById('info');
+
+    if (info.style.display === 'none') {
+      info.style.display = 'block';
+    } else {
+      info.style.display = 'none';
+    }
+  }
+  
   progressJs().setOptions({overlayMode: true, theme: 'custom'}).start();
 
   if (window.attachEvent) {
@@ -404,7 +418,7 @@
       <ul class="process">
 
         <li class="process__step process__step_research">
-          <div class="process__step-icon is-active process__step-icon-gestao"></div>
+          <div class="process__step-icon is-active process__step-icon-gestao" onclick="toggleInfo(this)"></div>
         </li>
 
         <li class="process__step-info process__step-info_research is-active">
@@ -428,7 +442,7 @@
           </ul>
         </li>
         <li class="process__step process__step_develop">
-          <div class="process__step-icon is-active process__step-icon-adm"></div>
+          <div class="process__step-icon is-active process__step-icon-adm" onclick="toggleInfo(this)"></div>
         </li>
         <li class="process__step-info process__step-info_develop">
           <h3><span>Eixo II</span> &mdash; Administração e Desenvolvimento Institucional</h3>
@@ -451,7 +465,7 @@
            </ul>
          </li>
          <li class="process__step process__step_deploy">
-           <div class="process__step-icon is-active process__step-icon-ensino"></div>
+           <div class="process__step-icon is-active process__step-icon-ensino" onclick="toggleInfo(this)"></div>
          </li>
          <li class="process__step-info process__step-info_deploy">
            <h3><span>Eixo III</span> &mdash; Ensino</h3>
