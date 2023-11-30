@@ -1,6 +1,9 @@
-<style>
+<!--<style>
   .indented-item p {
     margin-bottom: 10px; /* Você pode ajustar esse valor para o espaçamento desejado */
+  }
+    .process__step-info {
+    display: none;
   }
 </style>
 
@@ -13,10 +16,9 @@
     cursor: pointer;
     color: blue;
   }
-
   .process__step-icon-gestao {
     /* Define a imagem como plano de fundo */
-    background-image: url('build/static/images/plano_gestao/gestao.jpg');
+    background-image: url('static/images/plano_gestao/gestao.jpg');
     background-size: cover; /* Ajuste o tamanho da imagem ao ícone */
     background-position: center; /* Centralize a imagem no ícone */
     width: 100px; /* Defina a largura do ícone conforme necessário */
@@ -24,7 +26,7 @@
   }
   .process__step-icon-adm {
     /* Define a imagem como plano de fundo */
-    background-image: url('build/static/images/plano_gestao/adm.jpg');
+    background-image: url('static/images/plano_gestao/adm.jpg');
     background-size: cover; /* Ajuste o tamanho da imagem ao ícone */
     background-position: center; /* Centralize a imagem no ícone */
     width: 100px; /* Defina a largura do ícone conforme necessário */
@@ -32,7 +34,7 @@
   }
   .process__step-icon-ensino {
     /* Define a imagem como plano de fundo */
-    background-image: url('build/static/images/plano_gestao/ensino.jpg');
+    background-image: url('static/images/plano_gestao/ensino.jpg');
     background-size: cover; /* Ajuste o tamanho da imagem ao ícone */
     background-position: center; /* Centralize a imagem no ícone */
     width: 100px; /* Defina a largura do ícone conforme necessário */
@@ -41,7 +43,7 @@
 
   .process__step-icon-extensao {
     /* Define a imagem como plano de fundo */
-    background-image: url('build/static/images/plano_gestao/extensao.jpg');
+    background-image: url('static/images/plano_gestao/extensao.jpg');
     background-size: cover; /* Ajuste o tamanho da imagem ao ícone */
     background-position: center; /* Centralize a imagem no ícone */
     width: 100px; /* Defina a largura do ícone conforme necessário */
@@ -50,7 +52,7 @@
 
   .process__step-icon-pesquisa {
     /* Define a imagem como plano de fundo */
-    background-image: url('build/static/images/plano_gestao/pesquisa.jpg');
+    background-image: url('static/images/plano_gestao/pesquisa.jpg');
     background-size: cover; /* Ajuste o tamanho da imagem ao ícone */
     background-position: center; /* Centralize a imagem no ícone */
     width: 100px; /* Defina a largura do ícone conforme necessário */
@@ -59,22 +61,29 @@
 
   .process__step-icon-pessoas {
     /* Define a imagem como plano de fundo */
-    background-image: url('build/static/images/plano_gestao/pessoas.jpg');
+    background-image: url('static/images/plano_gestao/pessoas.jpg');
     background-size: cover; /* Ajuste o tamanho da imagem ao ícone */
     background-position: center; /* Centralize a imagem no ícone */
     width: 100px; /* Defina a largura do ícone conforme necessário */
     height: 100px; /* Defina a altura do ícone conforme necessário */
   }
 
-  .process__step-icon-comunicacao{
+  .process__step-icon-comunicacao {
     /* Define a imagem como plano de fundo */
-    background-image: url('build/static/images/plano_gestao/comunicacao.jpg');
+    background-image: url('static/images/plano_gestao/comunicacao.jpg');
     background-size: cover; /* Ajuste o tamanho da imagem ao ícone */
     background-position: center; /* Centralize a imagem no ícone */
     width: 100px; /* Defina a largura do ícone conforme necessário */
     height: 100px; /* Defina a altura do ícone conforme necessário */
   }
-
+  .process__step-icon-participe {
+    /* Define a imagem como plano de fundo */
+    background-image: url('static/images/plano_gestao/participe.jpg');
+    background-size: cover; /* Ajuste o tamanho da imagem ao ícone */
+    background-position: center; /* Centralize a imagem no ícone */
+    width: 100px; /* Defina a largura do ícone conforme necessário */
+    height: 100px; /* Defina a altura do ícone conforme necessário */
+  }
 </style>
 <style>
   /* Estilo padrão dos ícones do Instagram */
@@ -88,31 +97,45 @@
 </style>
 
 
+-->
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><!--
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Robério meu diretor!</title>
+  <title>Robério meu Diretor</title>
   <meta name="description" content="Page-specific description">
   <meta name="keywords" content="Page-specific keywords">
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="shortcut icon" href="build/static/images/favicons/r_libras.png" type="image/x-icon">
-  <link rel="apple-touch-icon" href="../static/images/favicons/r_libras.png">
+  <link rel="shortcut icon" href="static/images/favicons/r_libras.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="static/images/favicons/r_libras.png">
   <link rel="apple-touch-icon-precomposed" href="static/images/favicons/r_libras.png">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="build/static/css/screen.min.css">
-  <link rel="stylesheet" href="build/static/css/custom.min.css">
-  <link rel="stylesheet" href="build/static/css/icon-font.less">
+  <link rel="stylesheet" href="static/css/screen.min.css">
+  <link rel="stylesheet" href="static/css/custom.min.css">
+  <link rel="stylesheet" href="static/css/icon-font.less">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <script src="static/js/head.min.js"></script>
-
+-->
 </head>
 <body>
-<script>
+
+  <p align="justify"><strong> Estaremos fora do ar por 24 horas em atendimento a Regulamento do processo de consulta a Comunidade para o cargo de Diretor(a)-Geral - IFBA.<strong> </p>
+<!--<script>
+
+    function toggleInfo(icon) {
+    var info = document.getElementById('info');
+
+    if (info.style.display === 'none') {
+      info.style.display = 'block';
+    } else {
+      info.style.display = 'none';
+    }
+  }
+  
   progressJs().setOptions({overlayMode: true, theme: 'custom'}).start();
 
   if (window.attachEvent) {
@@ -137,7 +160,7 @@
 </body>
 </html>
 
-<!-- Header-->
+<!-- Header-
 <header class="main-header">
   <div class="first-nav">
     <div class="container">
@@ -145,7 +168,7 @@
         <ul>
         <!--  <li><a class="is-selected">Português</a></li>
           <li><a href="#">English</a></li>
-          <li><a href="#">Español</a></li>-->
+          <li><a href="#">Español</a></li>--
         </ul>
       </nav>
       <a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">Menu</a>
@@ -172,7 +195,7 @@
     }
   </style>
 </header>
-<!-- Home section-->
+<!-- Home section--
 <section class="home-section" id="home">
   <div class="home-section__bg"></div>
   <div class="home-section__overlay">
@@ -181,15 +204,15 @@
         <div class="candidate-info">
           <!-- Adicione a imagem do candidato aqui à esquerda
           <img src="candidato.jpg" alt="Foto do Candidato Robério Rocha">
-          <h1>Robério Rocha</h1> -->
+          <h1>Robério Rocha</h1> --
         </div>
-        <!--<h2>Candidato a Diretor Geral - IFBA, Campus Irecê.</h2>-->
+        <!--<h2>Candidato a Diretor Geral - IFBA, Campus Irecê.</h2>--
       </header>
     </div>
   </div>
 </section>
 
-<!-- About section-->
+<!-- About section-
 <section class="about-section" id="about">
   <div class="container">
     <div class="about-card">
@@ -208,7 +231,7 @@
     </div>
   </div>
 </section>
-<!-- Experiência e Competência-->
+<!-- Experiência e Competência-
 <section class="common-section" id="services">
   <div class="container">
     <header class="common-section__header">
@@ -221,7 +244,7 @@
         <li class="services__item item">
           <h4>Infraestrutura e Recursos do Campus</h4>
 
-        <!--  <p align="justify"><strong> Durante minha gestão como Diretor Geral, realizamos melhorias notáveis no campus, incluindo.</strong></p>-->
+        <!--  <p align="justify"><strong> Durante minha gestão como Diretor Geral, realizamos melhorias notáveis no campus, incluindo.</strong></p>-
           <ul>
             <li class="indented-item">
               <p align="justify">Construção de um novo pavilhão de aulas e implantação de laboratórios;</p>
@@ -276,7 +299,7 @@
           <h4>Apoio a Estudantes</h4>
           <ul>
             <li class="indented-item">
-              <p align="justify">Implementamos um programa de distribuição de lanches para os alunos;</p>
+              <p align="justify">Implementamos um programa de distribuição de lanches para os alunos, assegurando que tenham acesso a refeições adequadas durante o dia letivo;</p>
             </li>
             <li class="indented-item">
               <p align="justify">Expandimos as oportunidades de estágio para nossos alunos, proporcionando experiências práticas valiosas em suas áreas de estudo.</p>
@@ -320,7 +343,7 @@
   </div>
 </section>
 
-<!-- Projetos-->
+<!-- Projetos-
 <section class="common-section" id="projects">
   <header class="common-section__header">
     <h2>Projetos</h2>
@@ -330,69 +353,70 @@
     <div class="grid-container">
       <div class="projects">
         <figure class="projects__item">
-          <img src="build/static/images/projects/restaurante3.jpg" alt="Projeto 1: Restaurante acadêmico">
+          <img src="static/images/projects/restaurante3.jpg" alt="Projeto 1: Restaurante acadêmico">
           <figcaption ><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Implantação do RA – Restaurante Acadêmico com alimentação estudantil subsidiada pelo Campus. </a></figcaption>
         </figure>
         <figure class="projects__item">
-          <img src="build/static/images/projects/transporte3.jpg" alt="Projeto 2: Transporte publico escolar">
+          <img src="static/images/projects/transporte3.jpg" alt="Projeto 2: Transporte publico escolar">
           <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Viabilizar junto às prefeituras do município de Irecê a regulamentação do transporte publica escolar para os alunos do campus.</a></figcaption>
         </figure>
         <figure class="projects__item">
-          <img src="build/static/images/projects/sala2.jpg" alt="Projeto 3: Modernizar e climatizar salas de aula">
+          <img src="static/images/projects/sala2.jpg" alt="Projeto 3: Modernizar e climatizar salas de aula">
           <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Modernizar auditório e salas de aula, incluindo multimídia e climatização.</a></figcaption>
         </figure>
         <figure class="projects__item">
-          <img src="build/static/images/projects/bolsa.jpg" alt="Projeto 4: Assitencia estudantil">
+          <img src="static/images/projects/bolsa.jpg" alt="Projeto 4: Assitencia estudantil">
           <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Aprimoramento dos programas de assistência estudantil, estendendo o período de concessão de bolsas.
           </a></figcaption>
         </figure>
         <figure class="projects__item">
-          <img src="build/static/images/projects/da2.jpg" alt="Projeto 5: Movimento estudantil">
+          <img src="static/images/projects/da2.jpg" alt="Projeto 5: Movimento estudantil">
           <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Empoderar os movimentos estudantis, proporcionando um espaço apropriado e uma sala devidamente equipada para o seu pleno funcionamento.
           </a></figcaption>
         </figure>
         <figure class="projects__item">
-          <img src="build/static/images/projects/interligacao.jpg" alt="Projeto 6: Interligação de pavilhões">
+          <img src="static/images/projects/interligacao.jpg" alt="Projeto 6: Interligação de pavilhões">
           <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Construir uma interligação coberta entre os pavilhões de aulas para melhorar o conforto e a mobilidade dos alunos.
           </a></figcaption>
         </figure>
         <figure class="projects__item">
-          <img src="build/static/images/projects/novos_cursos.jpg" alt="Projeto 7: Novos cursos">
+          <img src="static/images/projects/novos_cursos.jpg" alt="Projeto 7: Novos cursos">
           <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Implantar novos cursos de graduação de graduação para melhor atender a comunidade desta região.
           </a></figcaption>
         </figure>
         <figure class="projects__item">
-          <img src="build/static/images/projects/intercambio.jpg" alt="Projeto 8: Intercambio">
+          <img src="static/images/projects/intercambio.jpg" alt="Projeto 8: Intercambio">
           <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Estabelecer uma política abrangente de incentivo às ações de intercâmbio, promovendo oportunidades e suporte para que nossos alunos. .
           </a></figcaption>
         </figure>
 
         <figure class="projects__item">
-          <img src="build/static/images/projects/teletrabalho2.jpg" alt="Projeto 9: Teletrabalho">
+          <img src="static/images/projects/teletrabalho2.jpg" alt="Projeto 9: Teletrabalho">
           <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Aprimoramento da política de teletrabalho reconhecendo ser uma tendência do novo mundo do trabalho, , ampliando as oportunidades para condições de trabalho mais eficazes e flexíveis.
           </a></figcaption>
         </figure>
         <figure class="projects__item">
-          <img src="build/static/images/projects/qualidade.jpg" alt="Projeto 10: Qualidade">
+          <img src="static/images/projects/qualidade.jpg" alt="Projeto 10: Qualidade">
           <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Desenvolver juntamente com setor específico, programa de melhoramento da qualidade de vida e promoção da saúde.
           </a></figcaption>
         </figure>
         <figure class="projects__item">
-          <img src="build/static/images/projects/capacitacao.jpg" alt="Projeto 11: capacitacao">
+          <img src="static/images/projects/capacitacao.jpg" alt="Projeto 11: capacitacao">
           <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Aprimorar o desenvolvimento de política de capacitação/qualificação dos servidores do campus e dar oportunidade aos TAEs e docentes para a qualificação, inclusive, com afastamentos quando necessário.
           </a></figcaption>
         </figure>
         <figure class="projects__item">
-          <img src="build/static/images/projects/carga_horaria.jpg" alt="Projeto 12: carga">
+          <img src="static/images/projects/carga_horaria.jpg" alt="Projeto 12: carga">
           <figcaption><a class="icon icon_link" href="#" rel="nofollow" style="color: #006400;">Aprimorar a política de flexibilidade de carga horária para professores que são estudantes ou pesquisadores.
           </a></figcaption>
         </figure>
+
       </div>
     </div>
   </div>
 </section>
 
-<!--Participe -->
+<!--Participe -
 <section class="common-section" id="process">
   <div class="advantages">
     <header class="about-card__header" style="background: rgba(107, 142, 35, 0.5);">
@@ -405,11 +429,12 @@
   </div>
 </section>
 
-<!-- Plano de Gestão-->
+<!-- Plano de Gestão-
 <section class="common-section" >
   <div class="container">
     <header class="common-section__header">
-      <h2>Plano de Gestão</h2>Conheça algumas das propostas contidas em nosso plano de Gestão. Conheça nosso plano de Gestão. Para mais propostas dentro de cada eixo do plano gestão, acesse: <a href="https://drive.google.com/file/d/17SR6VRrgEYp5IrCRsxjIm4IpvCFob2yU/view?usp=sharing" target="_blank">
+      <h2>Plano de Gestão</h2>
+      <h4>Conheça algumas das propostas contidas em nosso plano de Gestão. Para mais propostas dentro de cada eixo do plano gestão, acesse: <a href="https://drive.google.com/file/d/17SR6VRrgEYp5IrCRsxjIm4IpvCFob2yU/view?usp=sharing" target="_blank">
         Plano de Gestão</a></h4>
 
     </header>
@@ -417,7 +442,7 @@
       <ul class="process">
 
         <li class="process__step process__step_research">
-          <div class="process__step-icon is-active process__step-icon-gestao"></div>
+          <div class="process__step-icon is-active process__step-icon-gestao" onclick="toggleInfo(this)"></div>
         </li>
 
         <li class="process__step-info process__step-info_research is-active">
@@ -437,11 +462,11 @@
             <li class="indented-item"><p>Aumentar a participação dos alunos nas decisões do campus.</p></li>
             <li class="indented-item"><p>Buscar expandir estrutura, quadro de pessoal e recursos financeiros e materiais.</p></li>
             <!--<li class="indented-item"><p>Para mais propostas dentro do eixo de gestão acesse: <a href="https://drive.google.com/file/d/17SR6VRrgEYp5IrCRsxjIm4IpvCFob2yU/view?usp=sharing">
-            Plano de Gestão</a></p></li>-->
+            Plano de Gestão</a></p></li>-
           </ul>
         </li>
         <li class="process__step process__step_develop">
-          <div class="process__step-icon is-active process__step-icon-adm"></div>
+          <div class="process__step-icon is-active process__step-icon-adm" onclick="toggleInfo(this)"></div>
         </li>
         <li class="process__step-info process__step-info_develop">
           <h3><span>Eixo II</span> &mdash; Administração e Desenvolvimento Institucional</h3>
@@ -460,11 +485,11 @@
             <li class="indented-item"><p>Criar um boletim informativo sobre atos administrativos.</li>
             <li class="indented-item"><p>Realizar reuniões periódicas com coordenadores e servidores subordinados para melhorar a organização e desempenho do trabalho.</li>
             <!-- <li class="indented-item"><p>Para mais propostas dentro do eixo de gestão acesse: <a href="https://drive.google.com/file/d/17SR6VRrgEYp5IrCRsxjIm4IpvCFob2yU/view?usp=sharing">Plano de Gestão</a></p></li>
- -->
+ --
            </ul>
          </li>
          <li class="process__step process__step_deploy">
-           <div class="process__step-icon is-active process__step-icon-ensino"></div>
+           <div class="process__step-icon is-active process__step-icon-ensino" onclick="toggleInfo(this)"></div>
          </li>
          <li class="process__step-info process__step-info_deploy">
            <h3><span>Eixo III</span> &mdash; Ensino</h3>
@@ -483,7 +508,7 @@
              <li class="indented-item"><p>Melhorar o PROEJA, oferecendo educação aos jovens e adultos que não tiveram a oportunidade de se inserir.</p></li>
              <li class="indented-item"><p>Elaborar um estudo para ampliar e melhorar o quadro de docentes do campus.</p></li>
             <!-- <li class="indented-item"><p>Para mais propostas dentro do eixo de ensino acesse: <a href="https://drive.google.com/file/d/17SR6VRrgEYp5IrCRsxjIm4IpvCFob2yU/view?usp=sharing">Plano de Gestão</a></p></li>
-  -->
+  --
          </ul>
          </li>
          <li class="process__step process__step_deliver">
@@ -504,7 +529,7 @@
              <li class="indented-item"><p>Fortalecer e expandir parcerias com empresas públicas e privadas para aumentar as oportunidades de estágio.</li>
              <li class="indented-item"><p>Aprimorar os eventos realizados no campus Irecê.</li>
              <!--<li class="indented-item"><p>Para mais propostas dentro do eixo de extensão acesse: <a href="link-do-plano-de-gestao.html">Plano de Gestão</a></p></li>
-          -->
+          --
            </ul>
          </li>
      </div>
@@ -530,18 +555,9 @@
 <br>
 <br>
 <br>
- <br>
- <br>
- <br>
- <br>
- <br>
-<br>
-<br>
- <br>
-<br>
 <br>
 
- <!-- Plano de Gestão-->
+ <!-- Plano de Gestão--
 <section class="common-section" id="process2">
   <div class="container">
     <div class="grid-container">
@@ -565,7 +581,7 @@
             <li class="indented-item"><p>Fomentar parcerias e intercâmbios com instituições e empresas públicas e privadas na área de pesquisa, ciência, tecnologia, inovação e transferência de tecnologia.</p></li>
             <li class="indented-item"><p>Divulgar os resultados das pesquisas para a comunidade interna e externa.</p></li>
             <!--  <li class="indented-item"><p>Para mais propostas dentro do eixo de Pesquisa, Pós-Graduação e Inovação acesse: <a href="https://drive.google.com/file/d/17SR6VRrgEYp5IrCRsxjIm4IpvCFob2yU/view?usp=sharing">Plano de Gestão</a></p></li>
-   -->
+   --
             </ul>
           </li>
 
@@ -588,7 +604,7 @@
               <li class="indented-item"><p>Aprimorar a política de concessão de jornada flexibilizada para os TAEs.</p></li>
               <li class="indented-item"><p>Implementar uma política de acompanhamento das carreiras dos servidores visando incentivar o desenvolvimento pessoal e o avanço nas promoções e progressões dentro do plano de carreira de cada categoria.</p></li>
             <!--  <li class="indented-item"><p>Para mais propostas dentro do eixo gestão de pessoa acesse: <a href="https://drive.google.com/file/d/17SR6VRrgEYp5IrCRsxjIm4IpvCFob2yU/view?usp=sharing">Plano de Gestão</a></p></li>
-   -->
+   --
             </ul>
           </li>
           <li class="process__step process__step_deploy">
@@ -607,7 +623,7 @@
               <li class="indented-item"><p>Estabelecer parcerias com meios de comunicação locais e regionais para divulgar o IFBA - Campus Irecê e cobrir eventos.</p></li>
               <li class="indented-item"><p>Implementar uma política de divulgação dos processos de ingresso no IFBA.</p></li>
             <!--  <li class="indented-item"><p>Para mais propostas dentro do eixo de Comunicação Institucional acesse: <a href="https://drive.google.com/file/d/17SR6VRrgEYp5IrCRsxjIm4IpvCFob2yU/view?usp=sharing">Plano de Gestão</a></p></li>
-   -->
+   --
             </ul>
           </li>
 
@@ -627,23 +643,15 @@
   <br>
   <br>
   <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
 <br>
 <br>
- <br>
- <br>
- <br>
- <br>
- <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+
   <!-- About section
   <section class="sugestion-section" id="about">
     <div class="container">
@@ -724,7 +732,7 @@
     </div>
   </div>
 </section>-->
-<!-- Contacts section -->
+<!-- Contacts section --
 <div class="contacts-section" id="contacts">
   <div class="container">
     <section class="contact-card">
@@ -733,9 +741,9 @@
         <h4>Robério Batista Rocha</h4>
       </header>
       <div class="contact-info">
-       <!-- <div class="contact-info__logo">RR</div>-->
+       <!-- <div class="contact-info__logo">RR</div>--
         <div class="contact-info__logo">
-          <img src="build/static/images/contato.jpg" alt="Descrição da imagem" width="190">
+          <img src="static/images/contato.jpg" alt="Descrição da imagem" width="190">
         </div>
         <div class="contact-info__group">
           <div class="contact-info__additional">
@@ -758,7 +766,7 @@
             <p class="icon icon_phone">
               <a class="email" href="tel:74 99932 6010">74 99932 6010</a>
             </p>
-            <!-- Ícone do Facebook -->
+            <!-- Ícone do Facebook --
             <p><a href="https://www.facebook.com/roberio.batistarocha.5?mibextid=LQQJ4d" target="_blank">
               <i class="fab fa-facebook icon-facebook" style="font-size: 24px;"></i> Facebook
             </a></p>
@@ -772,7 +780,7 @@
             <li><a class="icon icon_twi" href="URL-DO-TWITTER" rel="nofollow">My Twitter</a></li>
             <li><a class="icon icon_gplus" href="URL-DO-GOOGLE-PLUS" rel="nofollow">I'm on Google+</a></li>
             <li><a class="icon icon_vk" href="URL-DO-VK" rel="nofollow">I'm in Vk</a></li>
-            <li><a class="icon icon_in" href="URL-DO-LINKEDIN" rel="nofollow">My Linkedin profile</a></li>-->
+            <li><a class="icon icon_in" href="URL-DO-LINKEDIN" rel="nofollow">My Linkedin profile</a></li>--
           </ul>
         </div>
       </div>
@@ -781,7 +789,7 @@
   <div class="gmap" id="gmap"></div>
 </div>
 
-<!-- Footer -->
+<!-- Footer --
 <footer class="main-footer">
   <div class="container">
     <p class="main-footer__copyright">
@@ -792,6 +800,6 @@
     </p>
   </div>
 </footer>
-<script src="build/static/js/body.min.js"></script>
+<script src="static/js/body.min.js"></script>-->
 </body>
 </html>
